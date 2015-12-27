@@ -97,10 +97,7 @@ The analysis is prepared on _mtcars_ dataset showed on the second slide and the 
     </header>
     
     <section>
-      <pre><code>Error in library(&quot;leaps&quot;): there is no package called &#39;leaps&#39;
-</code></pre>
-
-<pre><code>                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+      <pre><code>                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb
 Mazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
 Mazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
 Datsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
@@ -174,16 +171,10 @@ dataset[1:16,]
     
     <section>
       <pre><code class="r">leaps&lt;-regsubsets(mpg ~ ., data=dataset,nbest=10)
+plot(leaps,scale=&quot;r2&quot;)
 </code></pre>
 
-<pre><code>## Error in eval(expr, envir, enclos): nie uda3o sie znaleYa funkcji &#39;regsubsets&#39;
-</code></pre>
-
-<pre><code class="r">plot(leaps,scale=&quot;r2&quot;)
-</code></pre>
-
-<pre><code>## Error in plot(leaps, scale = &quot;r2&quot;): nie znaleziono obiektu &#39;leaps&#39;
-</code></pre>
+<p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"> </p>
 
     </section>
     
