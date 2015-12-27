@@ -1,7 +1,0 @@
-name: Publish Document
-account: rpubs
-server: rpubs.com
-bundleId:
-        https://api.rpubs.com/api/v1/document/138280/e41767f43126478d81ab69bd99dd0799
-url: http://rpubs.com/sta1111/138280
-when: 1451252488.81978
